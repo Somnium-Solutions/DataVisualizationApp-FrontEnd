@@ -1,27 +1,21 @@
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import './App.css';
+import DragDropArea from './components/DragDropArea';
+import DataVisualizer from './components/DataVisualizer';
 
 function App() {
+  const [data, setData] = React.useState(null);
+
+  // Handle data change from drag-and-drop
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.jsx</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
+      <h1>Data Visualization App</h1>
+      <div className="container">
+        <DragDropArea />
+        {data && <DataVisualizer data={data} />}
+      </div>
     </div>
   );
 }

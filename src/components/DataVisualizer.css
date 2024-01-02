@@ -1,0 +1,30 @@
+/* Within your component's CSS file or styled-components */
+.csv-container {
+    font-family: Arial, sans-serif;
+    color: #333;
+    width: 100%;
+  }
+  
+  .csv-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .csv-table th {
+    background-color: #f2f2f2;
+    /* Other header styles */
+  }
+  
+  .csv-table th,
+  .csv-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  .data-visualizer {
+    /* Your styles for the DataVisualizer component */
+    /* For example: */
+    font-family: Arial, sans-serif;
+    color: #333;
+    /* Other styles */
+  }
